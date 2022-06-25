@@ -15,16 +15,42 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 // All the variable combinations & whether they are win or lose, and track that to a score
+//Use Switch function?
 function runGame() {
+  // if (Math.floor(Math.random() * 4) +1 === 0){
+   //     return 'Rock';
+   //   }
+   //     else if (Math.floor(Math.random() * 4) +1 === 1){
+   //   return 'Paper';
+   //   }
+   //     else if (Math.floor(Math.random() * 4) +1 === 2) {
+   //   return 'Scissor';
+   //   }
+   //     else if (Math.floor(Math.random() * 4) +1 === 3) {
+   //   return 'Lizard';
+   //  }
+   //    else if (Math.floor(Math.random() * 4) +1 === 3) {
+   //   return 'Spock';
+   //     }
 
+    //console.log(letsPlay());
 }
 
 // Computers input for the game. 
 //'Data Type' in an array 0-4 (for each button/item), random number to generate an integer.
 // Add timer, "1,2,3, go!" to delay response
 // Add result to results area & player score
-function letsPlay() {
-    let num1 = Math.floor(Math.random() * 4) +1;
+function letsPlay(event) {
+    //get the Button choices into an array
+    let buttonChoices = document.getElementsByClassName('btn--big')[0];
+    //Set up the array to hold the move choice
+    let computerMove = [];
+    //iterate through the choices
+    for (let buttonChoice of buttonChoices) {
+        Math.floor(Math.random() * 4) +1
+        buttonChoice.push(computerMove);
+    }
+
 }
 
 //Tracks the player & computers score
