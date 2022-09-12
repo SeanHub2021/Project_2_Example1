@@ -14,8 +14,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 })
 
+const moveOptions = ["rock", "paper", "scissors", "lizard", "spock"];
+const playerWinCombos = ["rocklizard", "rockscissors", "paperrock", "paperspock", "scissorspaper",
+                        "scissorslizard","lizardpaper","lizardspock", "spockrock", "spockscissors"];
+
+
+
+
 // All the variable combinations & whether they are win or lose, and track that to a score
-//Use Switch function?
 function runGame() {
   // if (Math.floor(Math.random() * 4) +1 === 0){
    //     return 'Rock';
