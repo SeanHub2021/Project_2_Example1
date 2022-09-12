@@ -30,6 +30,9 @@ const playGame = (userChoice) => {
 //collect user choice + computer generated result & combine the results as text values & display the results in text 
 //in the index text area
 const getResults = (userChoice, computerChoice) => {
+
+    const playerScrore = document.getElementById('player-score');
+    const computerScore = document.getElementById('computer-score')
     switch (userChoice + computerChoice) {
         case 'rocklizard':
         case 'rockscissors':
@@ -42,6 +45,8 @@ const getResults = (userChoice, computerChoice) => {
         case 'spockrock':
         case 'spockscissors':
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + ' YOU WIN!'
+            playerScrore.innerHTML = "1";
+            computerScore.innerHTML = "0"
             break
         case 'lizardrock':
         case 'scissorsrock':
@@ -54,6 +59,8 @@ const getResults = (userChoice, computerChoice) => {
         case 'rockspock':
         case 'scissorsspock':
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + ' YOU LOSE!'           
+            playerScrore.innerHTML = "0";
+            computerScore.innerHTML = "1"
             break
         case 'rockrock':
         case 'scissorscissors':
@@ -61,7 +68,10 @@ const getResults = (userChoice, computerChoice) => {
         case 'lizardlizard':
         case 'spockspock':
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + ' YOU DRAW!'
-    }
+            playerScrore.innerHTML = "1";
+            computerScore.innerHTML = "1"
+   
+        }
 }
 
 
