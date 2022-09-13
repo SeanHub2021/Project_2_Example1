@@ -45,7 +45,7 @@ const getResults = (userChoice, computerChoice) => {
         case 'spockrock':
         case 'spockscissors':
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + ' YOU WIN!'
-            playerScrore.innerHTML = "1";
+            playerScore.innerHTML = "1";
             computerScore.innerHTML = "0"
             break
         case 'lizardrock':
@@ -59,7 +59,7 @@ const getResults = (userChoice, computerChoice) => {
         case 'rockspock':
         case 'scissorsspock':
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + ' YOU LOSE!'           
-            playerScrore.innerHTML = "0";
+            playerScore.innerHTML = "0";
             computerScore.innerHTML = "1"
             break
         case 'rockrock':
@@ -68,7 +68,7 @@ const getResults = (userChoice, computerChoice) => {
         case 'lizardlizard':
         case 'spockspock':
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + ' YOU DRAW!'
-            playerScrore.innerHTML = "1";
+            playerScore.innerHTML = "1";
             computerScore.innerHTML = "1"
    
         }
@@ -89,19 +89,6 @@ function letsPlay(event) {
 
 }
 
-//Tracks the player & computers score
-function incrementScore() {
-    
-}
-
-//Player lost round
-function youLostRound() {
-    
-}
-
-//Player won round
-function youWonRound() {
-}
 
 // Best of 5
 // Track scores for user or computer, first to 5 wins wins the game overall
