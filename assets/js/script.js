@@ -3,12 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button")
 
     for (let button of buttons) {
-        button.addEventListener("click", function() {
-            
+        button.addEventListener("click", function() {            
                 let gameType = this.getAttribute("data-type");
-                // alert(`You selected ${gameType}`)
-                playGame(gameType)
-            
+                playGame(gameType)            
         })
     }
 })
@@ -17,21 +14,21 @@ document.addEventListener("DOMContentLoaded", function() {
 const resultDisplay = document.querySelector('#result-area')
 //enter a const for each of the choices as an array
 const choices =['rock', 'paper', 'scissors', 'lizard', 'spock']
-//when a user clicks a choice, generate a computer result, and combine the results as text value to check result
-
-
+//when a user clicks a choice, generate a computer result,
 const playGame = (userChoice) => {
-    // const userChoice = e.currentTarget.dataset.type;
     const computerChoice = choices[Math.floor(Math.random() * choices.length)]
     getResults(userChoice, computerChoice)
 }
+//create result values for each game outcome, to change incrementally with results
+let playerWins = 0;
+let computerWins = 0;
 
 
 //collect user choice + computer generated result & combine the results as text values & display the results in text 
 //in the index text area
 const getResults = (userChoice, computerChoice) => {
 
-    const playerScrore = document.getElementById('player-score');
+    const playerScore = document.getElementById('player-score');
     const computerScore = document.getElementById('computer-score')
     switch (userChoice + computerChoice) {
         case 'rocklizard':
@@ -45,8 +42,7 @@ const getResults = (userChoice, computerChoice) => {
         case 'spockrock':
         case 'spockscissors':
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + ' YOU WIN!'
-            playerScore.innerHTML = "1";
-            computerScore.innerHTML = "0"
+            playerScore.innerHTML = ++playerWins;
             break
         case 'lizardrock':
         case 'scissorsrock':
@@ -59,8 +55,7 @@ const getResults = (userChoice, computerChoice) => {
         case 'rockspock':
         case 'scissorsspock':
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + ' YOU LOSE!'           
-            playerScore.innerHTML = "0";
-            computerScore.innerHTML = "1"
+            computerScore.innerHTML = ++computerWins;
             break
         case 'rockrock':
         case 'scissorscissors':
@@ -68,9 +63,7 @@ const getResults = (userChoice, computerChoice) => {
         case 'lizardlizard':
         case 'spockspock':
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + ' YOU DRAW!'
-            playerScore.innerHTML = "1";
-            computerScore.innerHTML = "1"
-   
+  
         }
 }
 
@@ -86,13 +79,10 @@ function letsPlay(event) {
         Math.floor(Math.random() * 4) +1
         buttonChoice.push(computerMove);
     }
-
 }
-
 
 // Best of 5
 // Track scores for user or computer, first to 5 wins wins the game overall
 // Give output message to 'Result Area' in index.html
 function gameWinner() {
-
 }
