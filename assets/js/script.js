@@ -42,6 +42,8 @@ const getResults = (userChoice, computerChoice) => {
         case 'spockrock':
         case 'spockscissors':
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + ' YOU WIN!'
+            //if player & computer results are as above, incrementally increase the playerWins score, and insert to the
+            //playerWins const, which updates the player-score id in index.html
             playerScore.innerHTML = ++playerWins;
             break
         case 'lizardrock':
@@ -54,6 +56,8 @@ const getResults = (userChoice, computerChoice) => {
         case 'spocklizard':
         case 'rockspock':
         case 'scissorsspock':
+            //if player & computer results are as above, incrementally increase the computerWins score, and insert to the
+            //computerWins const, which updates the computer-score id in index.html
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + ' YOU LOSE!'           
             computerScore.innerHTML = ++computerWins;
             break
