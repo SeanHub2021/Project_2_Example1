@@ -21,12 +21,28 @@ body {
 
 .logo {
     box-sizing: border-box;
+    height: auto;
+    width: 354px;
+    max-height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    object-fit: cover;
+}
+
+.title {
+    margin: 20px auto;
+    font-size: xxx-large;   
+    background-color: #be8af8;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 40%;
+    height: 25%;
     max-height: 450px;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
-    object-fit: cover;
 }
 
 /*Game & Results Area */
