@@ -29,6 +29,7 @@ body {
 .game-area {
     background-color: #15d0f1;
     box-sizing: border-box;
+    border-radius: 25px;
     width: 95%;
     height: 75vh;
     max-height: 450px;
@@ -50,10 +51,20 @@ body {
 }
 
 .score-area {
-    margin: 5px auto;
+    margin: 20px auto;
+    font-size: 1.2rem;   
+    background-color: #15d0f1;
+    box-sizing: border-box;
+    border-radius: 25px;
     width: 60%;
-    font-size: 1.2rem;
+    height: 60%;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
 }
+
 
 .controls-area {
     width: 85%;
