@@ -3,6 +3,9 @@
 
 "Rock, Paper, Scissors, Lizard, Spock" (hereafter refored to as RPSLS) is a website that allows users to play an enhanced game of 'Rock Paper Scissors' with the additional 'Lizard' & 'Spock' choices against a Computer, and to track the game score. 
 
+
+![Mockup](./assets/images/ReadMe_Images/README%20-%20Devices%20Mockup.PNG)
+
 ### Existing Features
 
 * Responsive design; works on different sized devices
@@ -172,6 +175,9 @@ The project will now of been cloned on your local machine for use.
 
 * [RPSLS - Rules](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock)
     * Rules for the game, particularly interactions with Lizard & Spock, found here.
+
+* [Am I Responsive? - Mockup image](https://ui.dev/amiresponsive)
+    * Generates the mockup of how the website looks on multiple devices, for use in the Readme.
 
 ### Content 
 
