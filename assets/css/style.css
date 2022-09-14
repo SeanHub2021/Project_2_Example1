@@ -226,6 +226,13 @@ body {
     }
 }
 
+@media (max-width: 606px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
+
 @media (max-width: 414px) {
     .controls-area {
         width: 100%;
@@ -264,6 +271,10 @@ body {
     }
 
     .heading {
+        font-size: 2rem;
+    }
+
+    .title {
         font-size: 2rem;
     }
 }
