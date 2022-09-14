@@ -1,9 +1,9 @@
 /* Main */
 
 body {
-    background-color: #white;
+    background-color: white;
     font-family: "Raleway", sans-serif;
-    color: #black;
+    color: black;
     text-align: center;
     font-family: "Bebas Neue";
 }
@@ -200,11 +200,10 @@ body {
 
 /* Media Queries */
 
-@media (max-width: 790) {
+@media (max-width: 790px) {
     .btn--big {
-        margin: 0 10px;
+        margin: 10px;
         padding: 5px;
-        border: 5px solid;
         width: 75px;
         height: 75px;
         font-size: 1.5rem;
