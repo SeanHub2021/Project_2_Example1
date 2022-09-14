@@ -22,7 +22,6 @@ let drawScore = document.getElementById('game-draw')
 //in the index text area
 const getResults = (userChoice, computerChoice) => {
 
-
     switch (userChoice + computerChoice) {
         case 'rocklizard':
         case 'rockscissors':
@@ -34,7 +33,7 @@ const getResults = (userChoice, computerChoice) => {
         case 'lizardspock':
         case 'spockrock':
         case 'spockscissors':
-            resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + '<br> YOU WIN!'
+            resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + '<br><br> YOU WIN!'
             //if player & computer results are as above, incrementally increase the playerWins score, and insert to the
             //playerWins const, which updates the player-score id in index.html
             playerScore.innerHTML = ++playerWins;
@@ -51,7 +50,7 @@ const getResults = (userChoice, computerChoice) => {
         case 'scissorsspock':
             //if player & computer results are as above, incrementally increase the computerWins score, and insert to the
             //computerWins const, which updates the computer-score id in index.html
-            resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + '<br> YOU LOSE!'           
+            resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + '<br><br> YOU LOSE!'           
             computerScore.innerHTML = ++computerWins;
             break
         case 'rockrock':
@@ -59,7 +58,7 @@ const getResults = (userChoice, computerChoice) => {
         case 'paperpaper':
         case 'lizardlizard':
         case 'spockspock':
-            resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + '<br> YOU DRAW!'
+            resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + '<br><br> YOU DRAW!'
             drawScore.innerHTML= ++gameDraw;
         }
 }
