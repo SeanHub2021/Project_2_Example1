@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 //display the user & computers choice in the result area as text
-const resultDisplay = document.querySelector('#result-area')
+const resultDisplay = document.getElementById('result-area')
 //enter a const for each of the choices as an array
 const choices =['rock', 'paper', 'scissors', 'lizard', 'spock']
 //when a user clicks a choice, generate a computer result,
@@ -28,8 +28,8 @@ let computerWins = 0;
 //in the index text area
 const getResults = (userChoice, computerChoice) => {
 
-    const playerScore = document.getElementById('player-score');
-    const computerScore = document.getElementById('computer-score')
+    let playerScore = document.getElementById('player-score');
+    let computerScore = document.getElementById('computer-score')
     switch (userChoice + computerChoice) {
         case 'rocklizard':
         case 'rockscissors':
@@ -83,10 +83,4 @@ function letsPlay(event) {
         Math.floor(Math.random() * 4) +1
         buttonChoice.push(computerMove);
     }
-}
-
-// Best of 5
-// Track scores for user or computer, first to 5 wins wins the game overall
-// Give output message to 'Result Area' in index.html
-function gameWinner() {
 }
