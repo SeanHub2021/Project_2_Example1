@@ -5,8 +5,13 @@ body {
     font-family: "Raleway", sans-serif;
     color: #black;
     text-align: center;
+    font-family: "Bebas Neue";
 }
 
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue");
+}
 /*Heading & Logo*/
 
 .heading {
@@ -30,8 +35,8 @@ body {
     background-color: #be8af8;
     box-sizing: border-box;
     border-radius: 25px;
-    width: 95%;
-    height: 25%;
+    width: 75%;
+    height: 75%;
     max-height: 450px;
     max-width: 830px;
     margin-left: auto;
@@ -44,6 +49,7 @@ body {
     font-size: 2rem;
     margin: auto;
     padding: 50px 0;
+    font-size: xx-large;
 }
 
 .result-area span {
@@ -52,7 +58,7 @@ body {
 
 .text-result-area {
     margin: 20px auto;
-    font-size: 1.2rem;   
+    font-size: xx-large;   
     background-color: #be8af8;
     box-sizing: border-box;
     border-radius: 25px;
@@ -67,7 +73,7 @@ body {
 
 .score-area {
     margin: 20px auto;
-    font-size: 1.2rem;   
+    font-size: x-large;   
     background-color: #be8af8;
     box-sizing: border-box;
     border-radius: 25px;
