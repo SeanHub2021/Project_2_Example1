@@ -12,14 +12,16 @@ let playerWins = 0;
 let gameDraw = 0;
 let computerWins = 0;
 
+//change the relevant score elements as per the user input & game outcome
+let playerScore = document.getElementById('player-score');
+let computerScore = document.getElementById('computer-score')
+let drawScore = document.getElementById('game-draw')
+
 
 //collect user choice + computer generated result & combine the results as text values & display the results in text 
 //in the index text area
 const getResults = (userChoice, computerChoice) => {
 
-    let playerScore = document.getElementById('player-score');
-    let computerScore = document.getElementById('computer-score')
-    let drawScore = document.getElementById('game-draw')
 
     switch (userChoice + computerChoice) {
         case 'rocklizard':
@@ -60,19 +62,6 @@ const getResults = (userChoice, computerChoice) => {
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + '<br> YOU DRAW!'
             drawScore.innerHTML= ++gameDraw;
         }
-}
-
-// Add result to results area & player score
-function letsPlay(event) {
-    //get the Button choices into an array
-    let buttonChoices = document.getElementsByClassName('btn--big')[0];
-    //Set up the array to hold the move choice
-    let computerMove = [];
-    //iterate through the choices
-    for (let buttonChoice of buttonChoices) {
-        Math.floor(Math.random() * 4) +1
-        buttonChoice.push(computerMove);
-    }
 }
 
 // Wait for the DOM to finish loading before running the game
