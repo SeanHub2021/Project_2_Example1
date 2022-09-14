@@ -1,15 +1,3 @@
-// Wait for the DOM to finish loading before running the game
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button")
-
-    for (let button of buttons) {
-        button.addEventListener("click", function() {            
-                let gameType = this.getAttribute("data-type");
-                playGame(gameType)            
-        })
-    }
-})
-
 //display the user & computers choice in the result area as text
 const resultDisplay = document.getElementById('result-area')
 //enter a const for each of the choices as an array
@@ -21,6 +9,7 @@ const playGame = (userChoice) => {
 }
 //create result values for each game outcome, to change incrementally with results
 let playerWins = 0;
+let gameDraw = 0;
 let computerWins = 0;
 
 
@@ -30,6 +19,8 @@ const getResults = (userChoice, computerChoice) => {
 
     let playerScore = document.getElementById('player-score');
     let computerScore = document.getElementById('computer-score')
+    let drawScore = document.getElementById('game-draw')
+
     switch (userChoice + computerChoice) {
         case 'rocklizard':
         case 'rockscissors':
@@ -67,10 +58,9 @@ const getResults = (userChoice, computerChoice) => {
         case 'lizardlizard':
         case 'spockspock':
             resultDisplay.innerHTML = 'You chose ' + userChoice + ' and the computer chose ' + computerChoice + '<br> YOU DRAW!'
-  
+            drawScore.innerHTML= ++gameDraw;
         }
 }
-
 
 // Add result to results area & player score
 function letsPlay(event) {
@@ -84,3 +74,15 @@ function letsPlay(event) {
         buttonChoice.push(computerMove);
     }
 }
+
+// Wait for the DOM to finish loading before running the game
+document.addEventListener("DOMContentLoaded", function() {
+    let buttons = document.getElementsByTagName("button")
+
+    for (let button of buttons) {
+        button.addEventListener("click", function() {            
+                let gameType = this.getAttribute("data-type");
+                playGame(gameType)            
+        })
+    }
+})

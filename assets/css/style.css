@@ -103,6 +103,7 @@ body {
 .scores {
     display: inline-block;
     padding: 10px;
+    margin: 5px;
 }
 
 /* Button styling */
@@ -242,7 +243,7 @@ body {
     }
 
     .player-score {
-        margin: 0.5em auto;
+        margin: 5px;
         display: block;
         padding: 5px;
     }
