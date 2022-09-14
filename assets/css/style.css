@@ -11,6 +11,7 @@ body {
 @font-face {
     font-family: "Bebas Neue";
     src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue");
+    font-display: swap;
 }
 /*Heading & Logo*/
 
