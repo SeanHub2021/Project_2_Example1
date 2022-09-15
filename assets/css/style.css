@@ -150,8 +150,8 @@ body {
 .btn--rock:hover {
     background-color: lightgrey;
     color: white;
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
 }
 
 .btn--paper {
@@ -162,8 +162,8 @@ body {
 .btn--paper:hover {
     background-color: gray;
     color: white;
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
 }
 
 .btn--scissors {
@@ -174,8 +174,8 @@ body {
 .btn--scissors:hover {
     background-color: darkred;
     color: white;
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
 }
 
 .btn--lizard {
@@ -186,8 +186,8 @@ body {
 .btn--lizard:hover {
     background-color: rgb(0, 131, 0);
     color: white;
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
 }
 
 .btn--spock {
@@ -198,8 +198,8 @@ body {
 .btn--spock:hover {
     background-color: darkblue;
     color: white;
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
 }
 
 .btn--submit {
