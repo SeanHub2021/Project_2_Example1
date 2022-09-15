@@ -29,6 +29,7 @@ body {
     margin-right: auto;
     padding: 1%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .title {
@@ -89,7 +90,7 @@ body {
 }
 
 .score-area {
-    margin: 20px auto;
+    margin: 10px auto;
     font-size: x-large;   
     background-color: #be8af8;
     box-sizing: border-box;
@@ -225,11 +226,16 @@ body {
         height: 75px;
         font-size: 1.5rem;
     }
+
+    .logo {
+        width: 75%;
+        height: 75%;
+    }
 }
 
 @media (max-width: 606px) {
     .title {
-        font-size: 2rem;
+        font-size: 200%;
     }
 }
 
@@ -276,8 +282,13 @@ body {
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 150%;
     }
+
+    .text-result-area {
+        font-size: 125%;
+    }
+
 }
 
 @media (max-width: 320px) {
@@ -289,8 +300,21 @@ body {
     .btn--big {
         margin: 10px 10px;
     }
+
     .result-area {
         padding: 10px 0;
+    }
+
+    .title {
+        font-size: 100%;
+    }
+
+    .score-area {
+        font-size: 100%;      
+    }
+
+    .text-result-area {
+        font-size: 100%;
     }
 
 }
