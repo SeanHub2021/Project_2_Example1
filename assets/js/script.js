@@ -1,10 +1,10 @@
 /*jshint esversion: 6 */
 //display the user & computers choice in the result area as text
-const resultDisplay = document.getElementById('result-area');
+let resultDisplay = document.getElementById('result-area');
 //enter a const for each of the choices as an array
-const choices =['rock', 'paper', 'scissors', 'lizard', 'spock'];
+let choices =['rock', 'paper', 'scissors', 'lizard', 'spock'];
 //when a user clicks a choice, generate a computer result,
-const playGame = (userChoice) => {
+let playGame = (userChoice) => {
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
     getResults(userChoice, computerChoice);
 };
