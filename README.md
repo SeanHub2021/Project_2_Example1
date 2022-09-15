@@ -21,9 +21,7 @@
 * Add a user vs user game mode
 * Buttons that match the logo image
 * Fix formatting for large screen devices (tv's etc)
-
-### Wireframes
-- Add in to readme if time permitting
+* Rewrite JS function GetResults, split into different functions with 1 responsibility each. Amend rest of code. 
 
 ## Technologies
 
@@ -105,48 +103,39 @@ Testing was performed to ensure all possible user button choices & random comput
 
 For example;
 
-User/Player selects the Rock button, Result area returns the text "You chose Rock and the computer chose Paper, You Lose!", Computer Score increases by 1. 
+step 1; Open url, user should notice the game rules image and section with rock paper scissors. 
+Step 2: Click on the Rock button, User should notice the result and notice the score to increase (only 1 score should increase
+Step 3: User should notice the text result displaying the the computers move selection and the outcome of the game
+Step 4: Repeat step 2
 
 Expected:
 
 The game to work, scores to increment, computer choice is randomly selected from available options, and the game is playable. The following results to correspond with score increases;
 
-Scissors cuts Paper
-Scissors decapitates Lizard
+Scissors cuts Paper<br>
+Scissors decapitates Lizard<br>
 
-Paper covers Rock
-Paper disproves Spock
+Paper covers Rock<br>
+Paper disproves Spock<br>
 
-Rock crushes Lizard
-Rock crushes Scissors
+Rock crushes Lizard<br>
+Rock crushes Scissors<br>
 
-Lizard poisons Spock
-Lizard eats Paper
+Lizard poisons Spock<br>
+Lizard eats Paper<br>
 
-Spock smashes Scissors
-Spock vaporizes Rock
+Spock smashes Scissors<br>
+Spock vaporizes Rock<br>
 
 Actual:
 
 Javascript game worked as expected. 
 
-### Unfixed Bugs
-GEThttps://8000-seanhub2021-project2exa-e99yoku869g.ws-eu64.gitpod.io/favicon.ico
-[HTTP/2 404 Not Found 29ms]
--error with the websites favicon icon. Will fix in next update. 
+### Fixed Bugs
+- "GEThttps://8000-seanhub2021-project2exa-e99yoku869g.ws-eu64.gitpod.io/favicon.ico [HTTP/2 404 Not Found 29ms]"
+Error with the websites favicon icon. Added favicon to main file directory to resolve. 
 
 ## Deployment
-
-### Version Control
-The site was created using the Visual Studio code editor and pushed to github to the remote repository https://github.com/SeanHub2021/Project_2_Example1
-
-The following git commands were used throughout development to push code to the remote repo:
-
-```git add <file>``` - This command was used to add the file(s) to the staging area before they are committed.
-
-```git commit -m “commit message”``` - This command was used to commit changes to the local repository queue ready for the final step.
-
-```git push``` - This command was used to push all committed code to the remote repository on github.
 
 ### Deployment to Github Pages
 
@@ -158,6 +147,14 @@ The following git commands were used throughout development to push code to the 
   - A live link will be displayed in a green banner when published successfully. 
 
 The live link can be found here - https://seanhub2021.github.io/Project_2_Example1/
+
+### Deployment to GitPod Pages
+- The site was deployed to GitPod IDE. The steps to deploy are as follows:
+    - Copy the GitHub repository URL
+    - In Gitpod Workspaces, navigate to 'New Workspace' 
+    - Paste the Gitpod repository URL
+    - Let GitPod build the repository image
+    - The GitPod IDE will now be loaded and available to write, edit, and save code. 
 
 ### Clone the Repository Code Locally
 
